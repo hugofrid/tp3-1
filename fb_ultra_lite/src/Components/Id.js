@@ -1,26 +1,47 @@
 import React, {Component} from 'react';
+import './Id.css';
 
 export default class Id extends React.Component {
-	constructor(props) {
+
+	constructor(props)
+	{
 		super(props);
-		this.state =
-		{	name: this.props.name,
-			fullname: this.props.fullname,
-			birthdate: this.props.birthdate,
-			image: this.props.image,
+		this.state = {
+			id: this.props.id,
+			count: 0,
+			backgchange: true,
 		}
 	}
 
-	render() {
-		return (
-			<div>
+	changeColor(e)
+	{
+		this.setState({
+    	backgchange:!e,
+  	});
+	}
+render()
+ {
+		let color
+		if(this.state.backgchange)
+		{
+			color="yellow"
+		}
+		else 
+		{
+			color="magenta"
+		}
+			return (
+				<div className="prof" style={{backgroundColor:color}}>
 
-				<img src={this.state.image}/>
-				<p>{this.state.name} {this.state.fullname}</p>
-				<p>{this.state.birthdate}</p>
+					<div className="photo"><img src={this.props.image}/></div>
+					<h1 style={{display:'inline'}}>{this.props.name}</h1> <h2 style={{display:'inline'}}>{this.props.fullname}</h2>
+					<p><small>{this.props.birthdate}</small></p>
+					<button style={{float:'right'}} onClick={() => this.changeColor(this.state.backgchange)}>Changeons de couleur !</button>
 
-			</div>
-		);
+				</div>
+				)
+			;
+		
 	}
 }
 

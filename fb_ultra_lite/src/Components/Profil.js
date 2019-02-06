@@ -6,6 +6,7 @@ export default class Profil extends Component
 	{
 		super(props);
 		this.state = {
+		
 			name: this.props.name
 		}
 		
@@ -13,7 +14,7 @@ export default class Profil extends Component
 
 	render(){
 		return(
-			<button>{this.state.name}</button>
+			<button key={this.state.name} onClick={this.props.onClick}>{this.props.name}</button>
 			)
 	}
 }

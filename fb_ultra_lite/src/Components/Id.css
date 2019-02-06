@@ -1,0 +1,23 @@
+img
+{
+	width: 100%;
+	margin: auto;
+	border-radius: 15px 15px;
+	border:black 1px solid;
+
+}
+
+.photo
+{
+	width: 50%;
+	margin:auto;
+
+}
+
+.prof
+{
+	padding:15px;
+	padding-bottom: 25px;
+	border-radius: 10px 10px;
+
+}

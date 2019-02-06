@@ -30,3 +30,18 @@
     transform: rotate(360deg);
   }
 }
+
+.feed{
+width: 50%;
+margin: auto;
+}
+
+.profils
+{
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px;
+
+}
