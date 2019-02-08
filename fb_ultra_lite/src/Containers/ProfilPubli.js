@@ -23,6 +23,9 @@ export default class ProfilPubli extends React.Component {
               fullname={this.props.fullname}
               birthdate={this.props.birthdate}
               image={this.props.image}
+              bg={this.props.bg}
+              toggleBg={this.props.toggleBg}
+
              />
              <br />
              <Publication 
