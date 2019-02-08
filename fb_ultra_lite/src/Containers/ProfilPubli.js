@@ -10,6 +10,7 @@ export default class ProfilPubli extends React.Component {
 
 	constructor(props) {
 		super(props);
+    
 	}
 
 	render() {

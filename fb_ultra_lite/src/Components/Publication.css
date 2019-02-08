@@ -6,3 +6,20 @@
 	padding: 10px;
 	padding-bottom: 25px;
 }
+
+.publi button
+{
+	
+	border:1px red solid;
+
+}
+
+
+.publi button:hover
+{
+	
+	border:1px black solid;
+	background: red;
+	color: white;
+
+}

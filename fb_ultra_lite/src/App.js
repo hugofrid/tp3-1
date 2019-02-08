@@ -12,7 +12,7 @@ class App extends Component {
        members: [
            { id: 1, name: 'Paul', fullname: 'LePoulpe',birthdate:"26/01/2008", image:require('./Source/paul.jpg'), last:"j'ai plus d'encre lol",count:0,bgchange:true},
             { id: 2, name: 'Tom', fullname: 'DeGouda',birthdate:"02/05/2018", image:require('./Source/gouda.jpg'),last:"mon pote l'ementale à des trous de memoire lol",count:0 },
-              { id: 3 , name: 'Patricia',fullname: 'McAvoy',birthdate:"21/04/1979", image:require('./Source/patricia.jpg'), last:"Ecouter pas kevin il dit tous le temps que c'est ma faute",count:0},
+              { id: 3 , name: 'Patricia',fullname: 'McAvoy',birthdate:"21/04/1979", image:require('./Source/patricia.jpg'), last:"Ecoutez pas kevin ! il dit tous le temps que c'est de ma faute",count:0},
               ],
       visible:1,
 
@@ -40,7 +40,7 @@ class App extends Component {
         if(el.id=== this.state.visible)
           {
             let upcount = el.count + 1;
-            let index = this.state.visible - 1
+            let index = this.state.visible - 1;
             let nextMemb = this.state.members;
             nextMemb[index].count = upcount
             this.setState({members:nextMemb})        
